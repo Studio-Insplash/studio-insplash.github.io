@@ -30,34 +30,13 @@ function drawPadlock() {
 }
 
 function drawShackle() {
-    let arcX = 0;
-    let arcY = -20;
-    let arcW = 80;
-    let arcH = 80;
 
     // --- シャックル（U字の上部分）---
     arc(arcX, arcY, arcW, arcH, PI, 0);
-
-    // 左右の線をアーチの端から伸ばす
-    liftShackle((arcX - arcW) / 2, arcY, (arcX + arcW) / 2, arcY);
 }
 
-function liftShackle(leftX, leftY, rightX, rightY) {
-    // 上限を決めて、そこまで少しずつ上げる
-    if (shackleLift < maxLift) {
-        shackleLift += 0.5; // 0.5pxずつ上に
-    }
-
-    // シャックル描画
-    push();
-    setupDrawingStyle();
-    translate(0, -shackleLift); // shackleLift分上に上がる
-
-    // 左の縦棒
-    line(leftX, leftY, leftX, shackleLift);
-    // 右の縦棒
-    line(rightX, rightY, rightX, shackleLift);
-    pop();
+function liftShackle() {
+    // process
 }
 
 function rotateLeftShackle() {
