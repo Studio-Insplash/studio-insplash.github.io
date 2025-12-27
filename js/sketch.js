@@ -1,5 +1,6 @@
 let shackleLift = 0; // シャックルの上がり具合を管理する変数
 let maxLift = 40; // 鍵穴から出る最大量
+let shackleAngle = 0;
 
 function setup() {
     createCanvas(windowWidth, windowHeight);
@@ -40,6 +41,16 @@ function drawShackle() {
     drawShackleCore();
     drawShackleBars();
     pop();
+}
+
+function updateLift() {
+    if (shackleLift < maxLift) {
+        shackleLift += 1.0; // 徐々に上昇
+    }
+}
+
+function updateRotation() {
+    // process
 }
 
 function drawShackleCore() {
