@@ -30,17 +30,29 @@ function drawPadlock() {
 }
 
 function drawShackle() {
+    updateLift();
+    updateRotation();
 
-    // --- シャックル（U字の上部分）---
-    arc(arcX, arcY, arcW, arcH, PI, 0);
+    push();
+    translate(0, -shackleLift);
+    rotate(radians(shackleAngle));
+
+    drawShackleCore();
+    drawShackleBars();
+    pop();
 }
 
-function liftShackle() {
-    // process
+function drawShackleCore() {
+    arc(0, -20, 80, 80, PI, 0);
 }
 
-function rotateLeftShackle() {
-    // Process
+function drawShackleBars() {
+    const leftX = -40;
+    const rightX = 40;
+    const y = -20;
+
+    line(leftX, y, leftX, y + shackleLift);
+    line(rightX, y, rightX, y + shackleLift);
 }
 
 function drawPadlockBody() {
