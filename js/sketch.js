@@ -36,8 +36,17 @@ function drawShackle() {
     updateRotation();
 
     push();
+    // 全体を持ち上げる
     translate(0, -shackleLift);
+
+    // 右側のシャックルをヒンジ位置として指定
+    translate(40, -20);
+
+    // ヒンジ中心で回転
     rotate(radians(shackleAngle));
+
+    // 描画座標を左の軸に移す
+    translate(-40, 20);
 
     drawShackleCore();
     drawShackleBars();
