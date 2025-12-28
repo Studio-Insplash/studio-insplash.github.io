@@ -1,6 +1,7 @@
 let shackleLift = 0; // シャックルの上がり具合を管理する変数
 let maxLift = 40; // 鍵穴から出る最大量
 let shackleAngle = 0;
+let targetAngle = -30; // 開く角度
 
 function setup() {
     createCanvas(windowWidth, windowHeight);
@@ -50,7 +51,14 @@ function updateLift() {
 }
 
 function updateRotation() {
-    // process
+    // まだ上がりきってない間は回転しない
+    if (shackleLift < maxLift)
+        return ;
+
+    // 目標角度まで少しずつ回す
+    if (shackleAngle > targetAngle) {
+        shackleAngle -= 0.5;
+    }
 }
 
 function drawShackleCore() {
