@@ -74,13 +74,12 @@ function drawShackleCore() {
     arc(0, -20, 80, 80, PI, 0);
 }
 
-function drawShackleBars() {
-    const leftX = -40;
-    const rightX = 40;
-    const y = -20;
+function drawLeftBar(y, lift) {
+    line(-40, y, -40, y + lift);
+}
 
-    line(leftX, y, leftX, y + shackleLift);
-    line(rightX, y, rightX, y + shackleLift);
+function drawRightBar(y, lift) {
+    line(40, y, 40, y + lift);
 }
 
 function drawPadlockBody() {
