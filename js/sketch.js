@@ -39,17 +39,28 @@ function drawShackle() {
     // 全体を持ち上げる
     translate(0, -shackleLift);
 
-    // 右側のシャックルをヒンジ位置として指定
-    translate(40, -20);
+    // 高さの設定
+    const y = -20;
 
-    // ヒンジ中心で回転
+    // --- 右足（固定）---
+    drawRightBar(y, shackleLift);
+
+    // --- 左足 + アーチ（回す）---
+    push();
+
+    // 右のシャックルをヒンジとしてそこへ軸をもってくる。
+    translate(40, y);
+
     rotate(radians(shackleAngle));
 
-    // 描画座標を左の軸に移す
-    translate(-40, 20);
+    // 描画基準を基に戻す
+    translate(-40, -y);
 
+    // アーチを描く
     drawShackleCore();
-    drawShackleBars();
+    
+    drawLeftBar(y, shackleLift);
+    pop();
     pop();
 }
 
