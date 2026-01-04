@@ -1,21 +1,16 @@
 let shackleLift = 0; // シャックルの上がり具合を管理する変数
 let maxLift = 40; // 鍵穴から出る最大量
 let shackleAngle = 0;
-let targetAngle = -30; // 開く角度
+let targetAngle = -180; // 開く角度
 
 function setup() {
-    createCanvas(windowWidth, windowHeight);
+    createCanvas(windowWidth, windowHeight, WEBGL);
 }
 
 function draw() {
     background('#f2f2f2');
-    translateToCenter();
     setupDrawingStyle();
     drawPadlock();
-}
-
-function translateToCenter() {
-    translate(width / 2, height / 2); // 原点が画面中央になる。
 }
 
 function setupDrawingStyle(){
@@ -51,7 +46,7 @@ function drawShackle() {
     // 右のシャックルをヒンジとしてそこへ軸をもってくる。
     translate(40, y);
 
-    rotate(radians(shackleAngle));
+    rotateY(radians(shackleAngle));
 
     // 描画基準を基に戻す
     translate(-40, -y);
@@ -66,7 +61,7 @@ function drawShackle() {
 
 function updateLift() {
     if (shackleLift < maxLift) {
-        shackleLift += 1.0; // 徐々に上昇
+        shackleLift += 1.5; // 徐々に上昇
     }
 }
 
@@ -77,7 +72,7 @@ function updateRotation() {
 
     // 目標角度まで少しずつ回す
     if (shackleAngle > targetAngle) {
-        shackleAngle -= 0.5;
+        shackleAngle -= 2;
     }
 }
 
@@ -86,7 +81,13 @@ function drawShackleCore() {
 }
 
 function drawLeftBar(y, lift) {
-    line(-40, y, -40, y + lift);
+    // 隙間用のオフセット（最大でここまで短くなる）
+    const gapMax = 9;
+
+    // liftに応じて 0 -> gapMaxまで短くする。
+    const gap = map(lift, 0, maxLift, 0, gapMax, true);
+
+    line(-40, y, -40, y + lift - gap);
 }
 
 function drawRightBar(y, lift) {
