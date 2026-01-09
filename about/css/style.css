@@ -6,8 +6,18 @@ body {
     padding: 2em;
 }
 
-h2 {
+h1 {
     color: #cc3300;
+    text-align: center;
+}
+
+h3, p {
+    text-align: center;
+}
+
+p {
+    max-width: 600px;
+    margin: 2em auto;
 }
 
 h4 a {
@@ -17,4 +27,8 @@ h4 a {
 
 h4 a:hover {
     color: rgba(255, 255, 255, 1);
+}
+
+h4 {
+    text-align: center;
 }
