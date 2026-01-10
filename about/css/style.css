@@ -6,9 +6,25 @@ body {
     padding: 2em;
 }
 
+.wall {
+    background-color: #3a3a3a;
+    background-image: 
+        linear-gradient(
+            rgba(255, 255, 255, 0.03)
+        );
+    padding: 3em 2em;
+    max-width: 720px;
+    margin: 3em auto;
+}
+
 h1 {
     color: #cc3300;
     text-align: center;
+}
+
+h1, h3 {
+    font-family: 'Permanent Marker', 'Helvetica Neue', sans-serif;
+    letter-spacing: 0.05em;
 }
 
 h3, p {
@@ -18,11 +34,14 @@ h3, p {
 p {
     max-width: 600px;
     margin: 2em auto;
+    font-family: 'DotGothic16', sans-serif;
 }
 
 h4 a {
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
+    font-family: 'Reggae One', sans-serif;
+    letter-spacing: 0.04em;
 }
 
 h4 a:hover {
