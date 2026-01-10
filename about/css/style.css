@@ -20,15 +20,8 @@ body {
 h1 {
     color: #cc3300;
     text-align: center;
-}
-
-h1, h3 {
     font-family: 'Permanent Marker', 'Helvetica Neue', sans-serif;
     letter-spacing: 0.05em;
-}
-
-h3, p {
-    text-align: center;
 }
 
 p {
