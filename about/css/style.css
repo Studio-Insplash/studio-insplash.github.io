@@ -10,8 +10,6 @@ body {
     position: relative;
     background-color: #3a3a3a;
     background-image: 
-        linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
         radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.05), transparent 10%),
         radial-gradient(circle at 70% 80%, rgba(255, 255, 255, 0.04), transparent 8%);
     padding: 4em 2em;
