@@ -33,7 +33,7 @@ body {
             transparent 2px,
             transparent 6px
         );
-    filter: blur(1px);
+    filter: blur(2px);
     opacity: 0.4;
     z-index: -1;
 }
