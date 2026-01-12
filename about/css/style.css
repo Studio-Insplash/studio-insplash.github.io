@@ -26,6 +26,7 @@ h1 {
 }
 
 p {
+    color: #f2f2f2;
     max-width: 600px;
     margin: 2em auto;
     font-family: 'DotGothic16', sans-serif;
@@ -42,7 +43,7 @@ h4 a {
 }
 
 h4 a:hover {
-    color: rgb(32, 250, 25);
+    color: #cc3300;
 }
 
 h4 {
