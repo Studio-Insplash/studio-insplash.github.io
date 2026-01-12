@@ -12,9 +12,9 @@ body {
         linear-gradient(
             rgba(255, 255, 255, 0.03)
         );
-    padding: 3em 2em;
-    max-width: 720px;
-    margin: 3em auto;
+    padding: 4.5em 2em;
+    max-width: 900px;
+    margin: 6em auto;
 }
 
 h1 {
@@ -22,12 +22,15 @@ h1 {
     text-align: center;
     font-family: 'Permanent Marker', 'Helvetica Neue', sans-serif;
     letter-spacing: 0.05em;
+    font-size: 3rem;
 }
 
 p {
     max-width: 600px;
     margin: 2em auto;
     font-family: 'DotGothic16', sans-serif;
+    font-size: 1.3rem;
+    line-height: 2.2;
 }
 
 h4 a {
@@ -35,10 +38,11 @@ h4 a {
     text-decoration: none;
     font-family: 'Reggae One', sans-serif;
     letter-spacing: 0.04em;
+    margin-top: 3em;
 }
 
 h4 a:hover {
-    color: rgba(255, 255, 255, 1);
+    color: rgb(32, 250, 25);
 }
 
 h4 {
