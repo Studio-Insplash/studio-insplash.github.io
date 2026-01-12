@@ -10,8 +10,9 @@ body {
     position: relative;
     background-color: #3a3a3a;
     background-image: 
-        radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.05), transparent 10%),
-        radial-gradient(circle at 70% 80%, rgba(255, 255, 255, 0.04), transparent 8%);
+        radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.035), transparent 55%),
+        radial-gradient(circle at 70% 60%, rgba(0, 0, 0, 0.15), transparent 60%),
+        radial-gradient(circle at 40% 80%, rgba(255, 255, 255, 0.02), transparent 65%);
     padding: 4em 2em;
     max-width: 900px;
     margin: 6em auto;
