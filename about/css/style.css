@@ -7,14 +7,36 @@ body {
 }
 
 .wall {
+    position: relative;
     background-color: #3a3a3a;
     background-image: 
-        linear-gradient(
-            rgba(255, 255, 255, 0.03)
-        );
-    padding: 4.5em 2em;
+        linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.05), transparent 10%),
+        radial-gradient(circle at 70% 80%, rgba(255, 255, 255, 0.04), transparent 8%);
+    padding: 4em 2em;
     max-width: 900px;
     margin: 6em auto;
+    background-size: 20px 20px;
+    border-radius: 4px;
+}
+
+.wall::before {
+    content: "";
+    position: absolute;
+    inset: -8px;
+    border-radius: 6px;
+    background:
+        repeating-linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0.15),
+            rgba(255, 255, 255, 0.15) 2px,
+            transparent 2px,
+            transparent 6px
+        );
+    filter: blur(1px);
+    opacity: 0.4;
+    z-index: -1;
 }
 
 h1 {
