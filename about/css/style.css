@@ -1,51 +1,24 @@
 body {
-    background-color: #2e2d2d;
-    font-family: 'Helvetica Neue', sans-serif;
-    color: #f2f2f2;
-    margin: 0;
-    padding: 2em;
-}
-
-.wall {
-    position: relative;
-    background-color: #5e5c5c;
-    padding: 4em 2em;
-    max-width: 900px;
-    margin: 6em auto;
-    background-size: 20px 20px;
-    box-shadow: 
-        0 30px 60px rgba(0,0,0,0.55);
+    background-image: url(../../assets/images/white_concrete_background.jpg);
 }
 
 h1 {
-    color: #cc3300;
-    text-align: center;
-    font-family: 'Permanent Marker', 'Helvetica Neue', sans-serif;
-    letter-spacing: 0.05em;
-    font-size: 3rem;
+    font-family: 'Rock Salt', cursive;
+    font-size: 4rem;
+}
+
+.wall {
+    max-width: 900px;
+    margin: 6em auto;
 }
 
 p {
-    color: #f2f2f2;
-    max-width: 600px;
-    margin: 2em auto;
-    font-family: 'DotGothic16', sans-serif;
-    font-size: 1.3rem;
-    line-height: 2.2;
+    font-family: 'Rock Salt';
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 h4 a {
-    color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
-    font-family: 'Reggae One', sans-serif;
-    letter-spacing: 0.04em;
-    margin-top: 3em;
-}
-
-h4 a:hover {
-    color: #cc3300;
-}
-
-h4 {
-    text-align: center;
+    font-family: 'Rock Salt';
+    font-size: 1.2rem;
 }
