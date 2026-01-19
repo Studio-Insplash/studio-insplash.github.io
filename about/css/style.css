@@ -5,6 +5,9 @@ body {
 h1 {
     font-family: 'Rock Salt', cursive;
     font-size: 4rem;
+    /* color: rgb(0, 255, 115); */
+    /* color: rgb(141, 0, 141); */
+    color: #0b0b0b;
 }
 
 .wall {
