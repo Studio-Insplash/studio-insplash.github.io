@@ -5,9 +5,10 @@ body {
 
 h1 {
     text-align: center;
-    font-family: 'Rock Salt', cursive;
-    font-size: 4rem;
+    font-family: 'Meow Script', 'Rock Salt', cursive;
+    font-size: 6rem;
     color: rgb(168, 9, 168);
+
     /* Text Design */
     text-shadow:
         0 0 1px #fff,
@@ -15,6 +16,7 @@ h1 {
         0 0 10px #ffffff,
         0 0 10px #e3d4e9,
         0 0 60px #ead6f1;
+    
     /* Frame */
     border: 2px solid #fff;
     border-radius: 1rem;
@@ -28,6 +30,16 @@ h1 {
     margin: 0 100px;
 }
 
+h1 span {
+    /* blink animation */
+    animation: blink linear infinite 1.4s;
+}
+
+h1 span:nth-of-type(2) {
+    /* blink animation */
+    animation: blink linear infinite 2s;
+}
+
 .wall {
     max-width: 900px;
     margin: 6em auto;
@@ -38,9 +50,49 @@ p {
     font-size: 1.5rem;
     font-weight: bold;
     color: rgb(0, 255, 115);
+     /* Text Design */
+    text-shadow:
+        0 0 1px #882255,
+        0 0 20px #882255,
+        0 0 10px #af077d,
+        0 0 10px #882255,
+        0 0 60px #a7105b;
 }
 
 h4 a {
     font-family: 'Rock Salt';
     font-size: 1.2rem;
+}
+
+@keyframes blink {
+    70% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+    72% {
+        color: #333;
+    }
+    83% {
+        text-shadow: none;
+    }
+    84% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+    85% {
+        color: #333;
+        text-shadow: none;
+    }
+    86% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+    95% {
+        color: #333;
+        text-shadow: none;
+    }
+    95.5% {
+        color: inherit;
+        text-shadow: inherit;
+    }
 }
