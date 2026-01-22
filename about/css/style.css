@@ -59,6 +59,10 @@ p {
         0 0 60px #1100ff;
 }
 
+h4 {
+    text-align: center;
+}
+
 h4 a {
     font-family: 'Rock Salt';
     font-size: 1.2rem;
