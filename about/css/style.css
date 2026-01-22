@@ -75,6 +75,16 @@ h4 a {
         0 0 60px #ff0040;
 }
 
+h4 a span {
+    /* blink animation */
+    animation: blink linear infinite 1.3s;
+}
+
+h4 a span:nth-of-type(2) {
+    /* blink animation */
+    animation: blink linear infinite 1.7s;
+}
+
 @keyframes blink {
     70% {
         color: inherit;
