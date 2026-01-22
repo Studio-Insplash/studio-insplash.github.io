@@ -49,19 +49,26 @@ p {
     font-family: 'Rock Salt';
     font-size: 1.5rem;
     font-weight: bold;
-    color: rgb(0, 255, 115);
+    color: rgb(0, 255, 0);
      /* Text Design */
     text-shadow:
-        0 0 1px #882255,
-        0 0 20px #882255,
-        0 0 10px #af077d,
-        0 0 10px #882255,
-        0 0 60px #a7105b;
+        0 0 1px #3528e6,
+        0 0 20px #3528e6,
+        0 0 10px #251ca1,
+        0 0 10px #2c1fdb,
+        0 0 60px #1100ff;
 }
 
 h4 a {
     font-family: 'Rock Salt';
     font-size: 1.2rem;
+    color: #fff;
+    text-shadow: 
+        0 0 1px #fff,
+        0 0 20px #cc0022,
+        0 0 10px #cc0022,
+        0 0 10px #ff0055,
+        0 0 60px #ff0040;
 }
 
 @keyframes blink {
