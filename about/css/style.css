@@ -1,14 +1,16 @@
+/* ============ Body ============ */
 body {
     background-color: #0b0b0b;
 }
 
+/* ============ H1 ============ */
 h1 {
     text-align: center;
     font-family: 'Meow Script', 'Rock Salt', cursive;
     font-size: 6rem;
     color: rgb(168, 9, 168);
 
-    /* Text Design */
+    /* ------------ Text Design ------------ */
     text-shadow:
         0 0 1px #fff,
         0 0 20px #ffffff,
@@ -16,7 +18,7 @@ h1 {
         0 0 10px #e3d4e9,
         0 0 60px #ead6f1;
     
-    /* Frame */
+    /* ------------ Frame / border ------------ */
     border: 2px solid #fff;
     border-radius: 1rem;
     box-shadow: 0 0 1px #fff,
@@ -25,10 +27,12 @@ h1 {
         inset 0 0 10px #b9c000,
         0 0 20px #b9c000,
         inset 0 0 10px #b9c000;
-    padding: 20px 30px;
-    margin: 0 100px;
+    
+    padding: 20px 30px; /* Inner padding */
+    margin: 0 100px;    /* Outer padding */
 }
 
+/* ------------ H1 Blink Animation ------------ */
 h1 span {
     /* blink animation */
     animation: blink linear infinite 1.4s;
@@ -39,16 +43,19 @@ h1 span:nth-of-type(2) {
     animation: blink linear infinite 2s;
 }
 
+/* ============ Wall Container ============ */
 .wall {
     max-width: 900px;
     margin: 6em auto;
 }
 
+/* ============ Paragraphs ============ */
 p {
     font-family: 'Rock Salt';
     font-size: 1.5rem;
     font-weight: bold;
     color: rgb(0, 255, 0);
+
      /* Text Design */
     text-shadow:
         0 0 1px #3528e6,
@@ -58,10 +65,12 @@ p {
         0 0 60px #1100ff;
 }
 
+/* ============ H4 ============ */
 h4 {
     text-align: center;
 }
 
+/* ------------ Link Neon ------------ */
 h4 a {
     font-family: 'Rock Salt';
     font-size: 1.2rem;
@@ -74,16 +83,16 @@ h4 a {
         0 0 60px #ff0040;
 }
 
+/* ------------ Blink animation ------------ */
 h4 a span {
-    /* blink animation */
     animation: blink linear infinite 1.3s;
 }
 
 h4 a span:nth-of-type(2) {
-    /* blink animation */
     animation: blink linear infinite 1.7s;
 }
 
+/* ------------ Animated Underline ------------ */
 .animated-underline {
     position: relative;
     display: inline-block;
@@ -113,6 +122,7 @@ h4 a span:nth-of-type(2) {
     left: 0;
 }
 
+/* ============ Blink Keyframes ============ */
 @keyframes blink {
     70% {
         color: inherit;
