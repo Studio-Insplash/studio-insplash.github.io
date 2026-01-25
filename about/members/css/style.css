@@ -85,3 +85,14 @@ body {
     border-radius: 0 0 50% 0;
     background-image: linear-gradient(to bottom left, var(--primary) 10%, var(--secondary) 115%);
 }
+
+.pp {
+    display: block;
+    width: 128px;
+    height: 128px;
+    margin: 0 auto 30px;
+    border-radius: 50%;
+    background-color: #FFF;
+    border: 5px solid #FFF;
+    object-fit: cover;
+}
