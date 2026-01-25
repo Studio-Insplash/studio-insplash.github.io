@@ -20,6 +20,7 @@ body {
     margin: 100px auto 0;
     width: 400px;
     height: 600px;
+    perspective: 1000px;
 }
 
 .card__inner {
@@ -95,4 +96,29 @@ body {
     background-color: #FFF;
     border: 5px solid #FFF;
     object-fit: cover;
+}
+
+.card__header h2 {
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.card__body {
+    padding: 30px;
+}
+
+.card__body h3 {
+    color: var(--dark);
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.card__body p {
+    color: var(--dark);
+    font-size: 18px;
+    line-height: 1.5;
 }
