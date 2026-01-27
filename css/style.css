@@ -50,6 +50,9 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
+
+    /* keep link width equal to text width */
+    align-items: flex-start;
 }
 
 nav a {
@@ -61,8 +64,10 @@ nav a {
     position: relative;
     display: inline-block;
     text-decoration: none;
+
     /* Set default text color */
     --neon-color: #fff;
+
     /* Set default shadow color */
     --neon-shadow1: #fff;
     --neon-shadow2: #fff;
@@ -89,8 +94,9 @@ nav a {
     position: absolute;
     width: 0;
     height: 3px;
-    bottom: 0;
+    bottom: -5px;
     left: 50%;
+
     /* underline color */
     background: var(--underline-color-0);
     box-shadow:
@@ -99,6 +105,7 @@ nav a {
         0 0 10px var(--underline-color-1),
         0 0 10px var(--underline-color-2),
         0 0 60px var(--underline-color-3);
+    
     transition: all 0.3s ease;
 }
 
