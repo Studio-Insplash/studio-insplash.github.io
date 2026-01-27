@@ -42,6 +42,135 @@ h1:focus {
     outline: none;
 }
 
+nav {
+    position: fixed;
+    right: 9rem;
+    bottom: 4rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+nav a {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 5rem;
+}
+
+.nav_link {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    /* Set default text color */
+    --neon-color: #fff;
+    /* Set default shadow color */
+    --neon-shadow1: #fff;
+    --neon-shadow2: #fff;
+    --neon-shadow3: #fff;
+
+    /* Set default underline color */
+    --underline-color-0: #fff;
+    --underline-color-1: #fff;
+    --underline-color-2: #fff;
+    --underline-color-3: #fff;
+
+    /* Text color */
+    color: var(--neon-color);
+    text-shadow:
+        0 0 1px var(--neon-color),
+        0 0 20px var(--neon-shadow1),
+        0 0 10px var(--neon-shadow1),
+        0 0 10px var(--neon-shadow2),
+        0 0 60px var(--neon-shadow3);
+}
+
+.nav_link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 50%;
+    /* underline color */
+    background: var(--underline-color-0);
+    box-shadow:
+        0 0 1px var(--underline-color-0),
+        0 0 20px var(--underline-color-1),
+        0 0 10px var(--underline-color-1),
+        0 0 10px var(--underline-color-2),
+        0 0 60px var(--underline-color-3);
+    transition: all 0.3s ease;
+}
+
+.nav_link:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.about {
+    /* Text color */
+    --neon-color: #cc0022;
+
+    /* Shadow color */
+    --neon-shadow1: #cc0022;
+    --neon-shadow2: #ff0055;
+    --neon-shadow3: #ff0040;
+
+    /* underline-color */
+    --underline-color-0: #cc0022;
+    --underline-color-1: #cc0022;
+    --underline-color-2: #ff0055;
+    --underline-color-3: #ff0040;
+}
+
+.products {
+    /* Text color */
+    --neon-color: #9929ea;
+
+    /* Shadow color */
+    --neon-shadow1: #9929ea;
+    --neon-shadow2: #9929ea;
+    --neon-shadow3: #9929ea;
+
+    /* underline-color */
+    --underline-color-0: #9929ea;
+    --underline-color-1: #9929ea;
+    --underline-color-2: #9929ea;
+    --underline-color-3: #9929ea;
+}
+
+.contact {
+    /* Text color */
+    --neon-color: #00b61e;
+
+    /* Shadow color */
+    --neon-shadow1: #00b61e;
+    --neon-shadow2: #00b61e;
+    --neon-shadow3: #00b61e;
+
+    /* underline-color */
+    --underline-color-0: #00b61e;
+    --underline-color-1: #00b61e;
+    --underline-color-2: #00b61e;
+    --underline-color-3: #00b61e;
+}
+
+.support {
+    /* Text color */
+    --neon-color: #ff5fcf;
+
+    /* Shadow color */
+    --neon-shadow1: #ff5fcf;
+    --neon-shadow2: #ff5fcf;
+    --neon-shadow3: #ff5fcf;
+
+    /* underline-color */
+    --underline-color-0: #ff5fcf;
+    --underline-color-1: #ff5fcf;
+    --underline-color-2: #ff5fcf;
+    --underline-color-3: #ff5fcf;
+}
+
 /* Animate neon flicker */
 @keyframes flicker {
     0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
