@@ -2,46 +2,58 @@
     /* Base font size */
     font-size: 10px;
 
-    /* Set neon color */
+    /* Neon effect colors */
     --neon-text-color: #f40;
     --neon-border-color: #08f;
 }
 
+/* Page base layout */
 body {
     background-color: #000;
+
+    /* Center main content */
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 30vh;
 }
 
+/* Site title */
 h1 {
     font-family: 'Exo 2', sans-serif;
     font-size: 11rem;
     font-weight: 200;
     font-style: italic;
+
     color: #fff;
     padding: 4rem 6rem 5.5rem;
+
+    /* Neon border */
     border: 0.4rem solid #fff;
     border-radius: 2rem;
+
     text-transform: uppercase;
     animation: flicker 3s infinite alternate;
 }
 
+/* Text selection style (Firefox) */
 h1::-moz-selection {
     background-color: var(--neon-border-color);
     color: var(--neon-text-color);
 }
 
+/* Text slection style */
 h1::selection {
     background-color: var(--neon-border-color);
     color: var(--neon-text-color);
 }
 
+/* Remove focus outline */
 h1:focus {
     outline: none;
 }
 
+/* Navigation container */
 nav {
     position: fixed;
     right: 9rem;
@@ -51,35 +63,34 @@ nav {
     flex-direction: column;
     gap: 1.2rem;
 
-    /* keep link width equal to text width */
+    /* Keep link width equal to text width */
     align-items: flex-start;
 }
 
+/* Navigation link base style */
 nav a {
     font-family: 'Exo 2', sans-serif;
     font-size: 5rem;
 }
 
+/* Neon navigation link */
 .nav_link {
     position: relative;
     display: inline-block;
     text-decoration: none;
 
-    /* Set default text color */
+    /* Default neon colors */
     --neon-color: #fff;
-
-    /* Set default shadow color */
     --neon-shadow1: #fff;
     --neon-shadow2: #fff;
     --neon-shadow3: #fff;
 
-    /* Set default underline color */
+    /* Default underline colors */
     --underline-color-0: #fff;
     --underline-color-1: #fff;
     --underline-color-2: #fff;
     --underline-color-3: #fff;
 
-    /* Text color */
     color: var(--neon-color);
     text-shadow:
         0 0 1px var(--neon-color),
@@ -89,6 +100,7 @@ nav a {
         0 0 60px var(--neon-shadow3);
 }
 
+/* Animated underline */
 .nav_link::after {
     content: '';
     position: absolute;
@@ -97,7 +109,7 @@ nav a {
     bottom: -5px;
     left: 50%;
 
-    /* underline color */
+    /* Underline */
     background: var(--underline-color-0);
     box-shadow:
         0 0 1px var(--underline-color-0),
@@ -109,76 +121,81 @@ nav a {
     transition: all 0.3s ease;
 }
 
+/* Expand underline on hover */
 .nav_link:hover::after {
     width: 100%;
     left: 0;
 }
 
+/* About link colors */
 .about {
-    /* Text color */
+    /* Text-color */
     --neon-color: #cc0022;
 
-    /* Shadow color */
+    /* Shadow-color */
     --neon-shadow1: #cc0022;
     --neon-shadow2: #ff0055;
     --neon-shadow3: #ff0040;
 
-    /* underline-color */
+    /* Underline-color */
     --underline-color-0: #cc0022;
     --underline-color-1: #cc0022;
     --underline-color-2: #ff0055;
     --underline-color-3: #ff0040;
 }
 
+/* Products link colors */
 .products {
-    /* Text color */
+    /* Text-color */
     --neon-color: #9929ea;
 
-    /* Shadow color */
+    /* Shadow-color */
     --neon-shadow1: #9929ea;
     --neon-shadow2: #9929ea;
     --neon-shadow3: #9929ea;
 
-    /* underline-color */
+    /* Underline-color */
     --underline-color-0: #9929ea;
     --underline-color-1: #9929ea;
     --underline-color-2: #9929ea;
     --underline-color-3: #9929ea;
 }
 
+/* Contact link colors */
 .contact {
     /* Text color */
     --neon-color: #00b61e;
 
-    /* Shadow color */
+    /* Shadow-color */
     --neon-shadow1: #00b61e;
     --neon-shadow2: #00b61e;
     --neon-shadow3: #00b61e;
 
-    /* underline-color */
+    /* Underline-color */
     --underline-color-0: #00b61e;
     --underline-color-1: #00b61e;
     --underline-color-2: #00b61e;
     --underline-color-3: #00b61e;
 }
 
+/* Suuport link colors */
 .support {
-    /* Text color */
+    /* Text-color */
     --neon-color: #ff5fcf;
 
-    /* Shadow color */
+    /* Shadow-color */
     --neon-shadow1: #ff5fcf;
     --neon-shadow2: #ff5fcf;
     --neon-shadow3: #ff5fcf;
 
-    /* underline-color */
+    /* Underline-color */
     --underline-color-0: #ff5fcf;
     --underline-color-1: #ff5fcf;
     --underline-color-2: #ff5fcf;
     --underline-color-3: #ff5fcf;
 }
 
-/* Animate neon flicker */
+/* Neon flicker animation */
 @keyframes flicker {
     0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
         text-shadow: 
