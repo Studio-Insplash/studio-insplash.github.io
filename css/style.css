@@ -12,21 +12,22 @@ body {
     background-color: #111;
 
     /* Center main content */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
     min-height: 30vh;
 }
 
 /* Site title */
 h1 {
+    grid-column: 4 / 10;
     font-family: 'Exo 2', sans-serif;
     font-size: 11rem;
     font-weight: 200;
     font-style: italic;
 
     color: #fff;
-    padding: 4rem 6rem 5.5rem;
+    padding: 56px 0px 56px;
+    text-align: center;
 
     /* Neon border */
     border: 0.4rem solid #fff;
@@ -55,7 +56,8 @@ h1:focus {
 
 /* Navigation container */
 nav {
-    position: fixed;
+    grid-column: 1 / 4;
+    padding: 72px;
     left: 9rem;
     bottom: 4rem;
 
