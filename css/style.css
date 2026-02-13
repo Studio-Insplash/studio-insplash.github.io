@@ -58,12 +58,10 @@ h1:focus {
 nav {
     grid-column: 1 / 4;
     padding: 72px;
-    left: 9rem;
-    bottom: 4rem;
 
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    gap: 2.4rem;
 
     /* Keep link width equal to text width */
     align-items: flex-start;
