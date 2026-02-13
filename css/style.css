@@ -14,7 +14,7 @@ body {
     /* Center main content */
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    min-height: 30vh;
+    min-height: 32vh;
 }
 
 /* Site title */
