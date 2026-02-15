@@ -1,6 +1,6 @@
 :root {
     /* Base font size */
-    font-size: 10px;
+    font-size: 100%; /* Default 16px */
 
     /* Neon effect colors */
     --neon-text-color: #f40;
