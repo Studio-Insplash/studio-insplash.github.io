@@ -43,7 +43,7 @@ h1::-moz-selection {
     color: var(--neon-text-color);
 }
 
-/* Text slection style */
+/* Text selection style */
 h1::selection {
     background-color: var(--neon-border-color);
     color: var(--neon-text-color);
