@@ -58,6 +58,7 @@ h1:focus {
 nav {
     grid-column: 1 / 4;
     padding: 4.5rem;
+    margin-top: 2.5rem;
 
     display: flex;
     flex-direction: column;
