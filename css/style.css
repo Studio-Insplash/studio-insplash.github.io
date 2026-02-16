@@ -86,12 +86,6 @@ nav a {
     --neon-shadow2: #fff;
     --neon-shadow3: #fff;
 
-    /* Default underline colors */
-    --underline-color-0: #fff;
-    --underline-color-1: #fff;
-    --underline-color-2: #fff;
-    --underline-color-3: #fff;
-
     color: var(--neon-color);
     text-shadow:
         0 0 1px var(--neon-color),
@@ -99,33 +93,6 @@ nav a {
         0 0 10px var(--neon-shadow1),
         0 0 10px var(--neon-shadow2),
         0 0 60px var(--neon-shadow3);
-}
-
-/* Animated underline */
-.nav_link::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 0.1875rem;
-    bottom: -0.3125rem;
-    left: 50%;
-
-    /* Underline */
-    background: var(--underline-color-0);
-    box-shadow:
-        0 0 1px var(--underline-color-0),
-        0 0 20px var(--underline-color-1),
-        0 0 10px var(--underline-color-1),
-        0 0 10px var(--underline-color-2),
-        0 0 60px var(--underline-color-3);
-    
-    transition: all 0.3s ease;
-}
-
-/* Expand underline on hover */
-.nav_link:hover::after {
-    width: 100%;
-    left: 0;
 }
 
 /* About link colors */
@@ -137,12 +104,16 @@ nav a {
     --neon-shadow1: #cc0022;
     --neon-shadow2: #ff0055;
     --neon-shadow3: #ff0040;
+}
 
-    /* Underline-color */
-    --underline-color-0: #cc0022;
-    --underline-color-1: #cc0022;
-    --underline-color-2: #ff0055;
-    --underline-color-3: #ff0040;
+.about:hover {
+    /* Text-color */
+    --neon-color: #fff;
+
+    /* Shadow-color */
+    --neon-shadow1: #cc0022;
+    --neon-shadow2: #ff0055;
+    --neon-shadow3: #ff0040;
 }
 
 /* Products link colors */
@@ -154,12 +125,16 @@ nav a {
     --neon-shadow1: #9929ea;
     --neon-shadow2: #9929ea;
     --neon-shadow3: #9929ea;
+}
 
-    /* Underline-color */
-    --underline-color-0: #9929ea;
-    --underline-color-1: #9929ea;
-    --underline-color-2: #9929ea;
-    --underline-color-3: #9929ea;
+.products:hover {
+    /* Text-color */
+    --neon-color: #fff;
+
+    /* Shadow-color */
+    --neon-shadow1: #9929ea;
+    --neon-shadow2: #9929ea;
+    --neon-shadow3: #9929ea;
 }
 
 /* Contact link colors */
@@ -171,12 +146,17 @@ nav a {
     --neon-shadow1: #00b61e;
     --neon-shadow2: #00b61e;
     --neon-shadow3: #00b61e;
+}
 
-    /* Underline-color */
-    --underline-color-0: #00b61e;
-    --underline-color-1: #00b61e;
-    --underline-color-2: #00b61e;
-    --underline-color-3: #00b61e;
+/* Contact link colors */
+.contact:hover {
+    /* Text color */
+    --neon-color: #fff;
+
+    /* Shadow-color */
+    --neon-shadow1: #00b61e;
+    --neon-shadow2: #00b61e;
+    --neon-shadow3: #00b61e;
 }
 
 /* Suuport link colors */
@@ -189,11 +169,16 @@ nav a {
     --neon-shadow2: #ff5fcf;
     --neon-shadow3: #ff5fcf;
 
-    /* Underline-color */
-    --underline-color-0: #ff5fcf;
-    --underline-color-1: #ff5fcf;
-    --underline-color-2: #ff5fcf;
-    --underline-color-3: #ff5fcf;
+}
+
+.support:hover {
+    /* Text-color */
+    --neon-color: #fff;
+
+    /* Shadow-color */
+    --neon-shadow1: #ff5fcf;
+    --neon-shadow2: #ff5fcf;
+    --neon-shadow3: #ff5fcf;
 }
 
 /* Neon flicker animation */
