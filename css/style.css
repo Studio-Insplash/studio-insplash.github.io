@@ -106,8 +106,8 @@ nav a {
     content: '';
     position: absolute;
     width: 0;
-    height: 3px;
-    bottom: -5px;
+    height: 0.1875rem;
+    bottom: -0.3125rem;
     left: 50%;
 
     /* Underline */
