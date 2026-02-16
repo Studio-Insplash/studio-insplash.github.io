@@ -30,11 +30,26 @@ h1 {
     text-align: center;
 
     /* Neon border */
-    border: 0.4rem solid #fff;
+    border: 0.4rem solid #EEEEEE;
     border-radius: 2rem;
+    text-shadow: 
+            -0.2rem -0.2rem 1rem #EEEEEE,
+            0.2rem 0.2rem 1rem #EEEEEE,
+            0 0 2rem var(--neon-text-color),
+            0 0 4rem var(--neon-text-color),
+            0 0 6rem var(--neon-text-color),
+            0 0 8rem var(--neon-text-color),
+            0 0 10rem var(--neon-text-color);
+        
+        box-shadow: 
+            0 0 0.5rem #b8b3b3,
+            inset 0 0 0.5rem #b8b3b3,
+            0 0 2rem var(--neon-border-color),
+            inset 0 0 2rem var(--neon-border-color),
+            0 0 4rem var(--neon-border-color),
+            inset 0 0 4rem var(--neon-border-color);
 
     text-transform: uppercase;
-    animation: flicker 3s infinite alternate;
 }
 
 /* Text selection style (Firefox) */
@@ -70,7 +85,7 @@ nav {
 
 /* Navigation link base style */
 nav a {
-    font-family: 'Doto', 'Exo 2', sans-serif;
+    font-family: 'Exo 2', sans-serif;
     font-size: 3.5rem;
 }
 
@@ -108,7 +123,7 @@ nav a {
 
 .about:hover {
     /* Text-color */
-    --neon-color: #fff;
+    --neon-color: #ccc;
 
     /* Shadow-color */
     --neon-shadow1: #cc0022;
@@ -129,7 +144,7 @@ nav a {
 
 .products:hover {
     /* Text-color */
-    --neon-color: #fff;
+    --neon-color: #ccc;
 
     /* Shadow-color */
     --neon-shadow1: #9929ea;
@@ -151,7 +166,7 @@ nav a {
 /* Contact link colors */
 .contact:hover {
     /* Text color */
-    --neon-color: #fff;
+    --neon-color: #ccc;
 
     /* Shadow-color */
     --neon-shadow1: #00b61e;
@@ -173,37 +188,10 @@ nav a {
 
 .support:hover {
     /* Text-color */
-    --neon-color: #fff;
+    --neon-color: #ccc;
 
     /* Shadow-color */
     --neon-shadow1: #ff5fcf;
     --neon-shadow2: #ff5fcf;
     --neon-shadow3: #ff5fcf;
-}
-
-/* Neon flicker animation */
-@keyframes flicker {
-    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
-        text-shadow: 
-            -0.2rem -0.2rem 1rem #fff,
-            0.2rem 0.2rem 1rem #fff,
-            0 0 2rem var(--neon-text-color),
-            0 0 4rem var(--neon-text-color),
-            0 0 6rem var(--neon-text-color),
-            0 0 8rem var(--neon-text-color),
-            0 0 10rem var(--neon-text-color);
-        
-        box-shadow: 
-            0 0 0.5rem #fff,
-            inset 0 0 0.5rem #fff,
-            0 0 2rem var(--neon-border-color),
-            inset 0 0 2rem var(--neon-border-color),
-            0 0 4rem var(--neon-border-color),
-            inset 0 0 4rem var(--neon-border-color);
-    }
-
-    20%, 24%, 55% {
-        text-shadow: none;
-        box-shadow: none;
-    }
 }
