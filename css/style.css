@@ -61,7 +61,7 @@ nav {
 
     display: flex;
     flex-direction: column;
-    gap: 2.4rem;
+    gap: 1.5rem;
 
     /* Keep link width equal to text width */
     align-items: flex-start;
