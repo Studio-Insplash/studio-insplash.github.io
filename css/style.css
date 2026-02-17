@@ -23,12 +23,16 @@ body {
 /* Site title */
 h1 {
     grid-column: 4 / 10;
+
+    /* Font config */
     font-family: 'Exo 2', sans-serif;
     font-size: 7.5rem;
-    font-weight: 600;
-
+    letter-spacing: 0.5rem;
     color: var(--base-txt-color);
-    padding: 3.5rem 0rem 3.5rem;
+
+    /* Layout config */
+    padding-top: 8.5rem;
+    padding-bottom: 2.5rem;
     text-align: center;
 
     text-transform: uppercase;
@@ -44,6 +48,15 @@ h1::selection {
 
 /* Remove focus outline */
 h1:focus {
+}
+
+/* Logo */
+.logo {
+    grid-column: 4 / 10;
+    justify-self: center;
+    width: 20.5rem;
+    height: auto;
+    margin-top: -7.5rem;
 }
 
 /* Navigation container */
