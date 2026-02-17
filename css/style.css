@@ -1,11 +1,18 @@
 :root {
     /* Base font size */
     font-size: 100%; /* Default 16px */
+
+    /* Base bg color */
+    --base-bg-color: #fcf9f2;
+
+    /* Base text color */
+    --base-txt-color: #323232;
 }
 
 /* Page base layout */
 body {
-    background-color: #111;
+    /* background-color: #111; */
+    background-color: var(--base-bg-color);
 
     /* Center main content */
     display: grid;
@@ -17,11 +24,10 @@ body {
 h1 {
     grid-column: 4 / 10;
     font-family: 'Exo 2', sans-serif;
-    font-size: 6.5rem;
-    font-weight: 200;
-    font-style: italic;
+    font-size: 7.5rem;
+    font-weight: 600;
 
-    color: #fff;
+    color: var(--base-txt-color);
     padding: 3.5rem 0rem 3.5rem;
     text-align: center;
 
@@ -53,8 +59,8 @@ nav {
 
 /* Navigation link base style */
 nav a {
-    font-family: 'Exo 2', sans-serif;
-    font-size: 3.5rem;
+    /* font-family: 'Exo 2', sans-serif;
+    font-size: 3.5rem; */
 }
 
 /* Neon navigation link */
