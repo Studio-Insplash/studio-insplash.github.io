@@ -27,8 +27,9 @@ h1 {
     /* Font config */
     font-family: 'Exo 2', sans-serif;
     font-size: 7.5rem;
-    letter-spacing: 0.5rem;
+    letter-spacing: 0.4rem;
     color: var(--base-txt-color);
+    font-style: italic;
 
     /* Layout config */
     padding-top: 6.5rem;
@@ -76,6 +77,8 @@ nav {
 nav a {
     font-family: 'Exo 2', sans-serif;
     font-size: 1.5rem;
+    color: var(--base-txt-color);
+    font-weight: 600;
 }
 
 /* Neon navigation link */
