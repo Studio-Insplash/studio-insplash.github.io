@@ -9,20 +9,27 @@
     --base-txt-color: #323232;
 }
 
-/* Page base layout */
+/* === Page base layout === */
 body {
-    /* background-color: #111; */
+    /* Theme */
     background-color: var(--base-bg-color);
 
-    /* Center main content */
+    /* Layout config */
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     min-height: 32vh;
 }
 
-/* Site title */
+/* === Site title === */
 h1 {
+    /* UI config */
+    cursor: default;
+
+    /* Layout config */
     grid-column: 4 / 10;
+    padding-top: 6.5rem;
+    padding-bottom: 2.5rem;
+    text-align: center;
 
     /* Font config */
     font-family: 'Exo 2', sans-serif;
@@ -30,29 +37,12 @@ h1 {
     letter-spacing: 0.4rem;
     color: var(--base-txt-color);
     font-style: italic;
-
-    /* Layout config */
-    padding-top: 6.5rem;
-    padding-bottom: 2.5rem;
-    text-align: center;
-
     text-transform: uppercase;
 }
 
-/* Text selection style (Firefox) */
-h1::-moz-selection {
-}
-
-/* Text selection style */
-h1::selection {
-}
-
-/* Remove focus outline */
-h1:focus {
-}
-
-/* Logo */
+/* === Logo === */
 .logo {
+    /* Layout config */
     grid-column: 4 / 10;
     justify-self: center;
     width: 20.5rem;
@@ -60,59 +50,69 @@ h1:focus {
     margin-top: -7.5rem;
 }
 
-/* Navigation container */
+/* === Navigation container === */
 nav {
+    /* Layout config */
     grid-column: 1 / 4;
     grid-row: 1 / 2;
     padding-top: 2.5rem;
     padding-left: 2.5rem;
     margin-top: 3.5rem;
 
+    /* Internal layout (Flex) */
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
 }
 
-/* Navigation link base style */
+/* === Navigation link base style === */
 nav a {
+    /* Font config */
     font-family: 'Exo 2', sans-serif;
     font-size: 1.5rem;
-    color: var(--base-txt-color);
     font-weight: 600;
-}
-
-/* Neon navigation link */
-.nav_link {
-    position: relative;
-    display: inline-block;
+    color: var(--base-txt-color);
+    
+    /* Link appearance */
     text-decoration: none;
 }
 
-/* About link colors */
-.about {
+/* === Underline animation === */
+.nav_link {
+    position: relative;
+    align-self: flex-start;
 }
 
-.about:hover {
+.nav_link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--base-txt-color);
+    transition: .3s;
 }
 
-/* Products link colors */
-.products {
+.nav_link::before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 10px;
+    bottom: -5px;
+    left: 0%;
+    transform-origin: bottom left;
+    background-color: var(--base-txt-color);
+    transition: left .3s;
+    transform: skew(42deg);
+    opacity: 0;
 }
 
-.products:hover {
+.nav_link:hover::after {
+    width: calc(100% + 16px);
 }
 
-/* Contact link colors */
-.contact {
-}
-
-/* Contact link colors */
-.contact:hover {
-}
-
-/* Suuport link colors */
-.support {
-}
-
-.support:hover {
+.nav_link:hover::before {
+    left: calc(100% + 16px);
+    opacity: 1;
 }
