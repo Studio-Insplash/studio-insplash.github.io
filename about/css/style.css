@@ -1,0 +1,10 @@
+:root {
+    /* Base font size */
+    font-size: 100%; /* Default 16px */
+
+    /* Base bg color */
+    --base-bg-color: #fcf9f2;
+
+    /* Base text color */
+    --base-txt-color: #323232;
+}
