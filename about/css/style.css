@@ -9,6 +9,10 @@
     --base-txt-color: #323232;
 }
 
+html {
+    scroll-snap-type: y mandatory;
+}
+
 body {
     /* Theme */
     background-color: var(--base-bg-color);
@@ -19,14 +23,19 @@ body {
     min-height: 32vh;
 }
 
-h1 {
+section {
     /* UI config */
     cursor: default;
 
     /* Layout config */
+    scroll-snap-align: start;
     grid-column: 4 / 10;
-    padding: 6.5rem;
-    text-align: center;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     /* Font config */
     color: var(--base-txt-color);
