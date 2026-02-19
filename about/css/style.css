@@ -8,3 +8,27 @@
     /* Base text color */
     --base-txt-color: #323232;
 }
+
+body {
+    /* Theme */
+    background-color: var(--base-bg-color);
+
+    /* Layout config */
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    min-height: 32vh;
+}
+
+h1 {
+    /* UI config */
+    cursor: default;
+
+    /* Layout config */
+    grid-column: 4 / 10;
+    padding: 6.5rem;
+    text-align: center;
+
+    /* Font config */
+    color: var(--base-txt-color);
+    font-family: 'Exo 2', sans-serif;
+}
