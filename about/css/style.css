@@ -49,9 +49,13 @@ section {
 }
 
 .philosophy__inner h1 {
+    /* Layout config */
+    text-align: center;
+
     /* Font config */
     font-size: 5.5rem;
     font-style: italic;
+    letter-spacing: 0.1rem;
 }
 
 .philosophy__inner p {
@@ -60,6 +64,7 @@ section {
 
     /* Font config */
     font-size: 2.5rem;
+    word-spacing: 0.1rem;
 }
 
 /* === What We Do section === */
@@ -75,6 +80,7 @@ section {
     /* Font config */
     font-size: 4.5rem;
     font-style: italic;
+    word-spacing: 0.2rem;
 }
 
 .wwd__inner p {
@@ -83,6 +89,7 @@ section {
 
     /* Font config */
     font-size: 2.5rem;
+    word-spacing: 0.1rem;
 }
 
 /* === Our Members Section === */
@@ -96,9 +103,11 @@ section {
 
 .members h1 {
     /* Layout config */
+    text-align: center;
     margin-top: 5.5rem;
 
     /* Font config */
     font-size: 4.5rem;
     font-style: italic;
+    word-spacing: 0.2rem;
 }
