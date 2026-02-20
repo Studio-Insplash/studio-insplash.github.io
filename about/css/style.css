@@ -41,3 +41,64 @@ section {
     color: var(--base-txt-color);
     font-family: 'Exo 2', sans-serif;
 }
+
+/* === Philosophy section === */
+.philosophy__inner {
+    /* Layout config */
+    margin-top: -10.5rem;
+}
+
+.philosophy__inner h1 {
+    /* Font config */
+    font-size: 5.5rem;
+    font-style: italic;
+}
+
+.philosophy__inner p {
+    /* Layout config */
+    text-align: center;
+
+    /* Font config */
+    font-size: 2.5rem;
+}
+
+/* === What We Do section === */
+.wwd__inner {
+    /* Layout config */
+    margin-top: -10.5rem;
+}
+
+.wwd__inner h1 {
+    /* Layout config */
+    text-align: center;
+
+    /* Font config */
+    font-size: 4.5rem;
+    font-style: italic;
+}
+
+.wwd__inner p {
+    /* Layout config */
+    text-align: center;
+
+    /* Font config */
+    font-size: 2.5rem;
+}
+
+/* === Our Members Section === */
+.members {
+    /* Layout config */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.members h1 {
+    /* Layout config */
+    margin-top: 5.5rem;
+
+    /* Font config */
+    font-size: 4.5rem;
+    font-style: italic;
+}
