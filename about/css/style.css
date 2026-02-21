@@ -23,6 +23,38 @@ body {
     min-height: 32vh;
 }
 
+.breadcrumb {
+    /* Layout config */
+    grid-column: 2 / 3;
+    list-style: none;
+    white-space: nowrap;
+
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.5rem;
+
+    /* Font config */
+    color: var(--base-txt-color);
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.breadcrumb > li > a {
+    /* UI config */
+    text-decoration: none;
+    color: inherit;
+}
+
+.breadcrumb > li + li::before {
+    /* Layout config */
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+
+    /* Font config */
+    content: ">";
+}
+
 section {
     /* UI config */
     cursor: default;
