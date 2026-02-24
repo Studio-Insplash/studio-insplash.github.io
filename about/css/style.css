@@ -31,7 +31,7 @@ body {
 
     display: flex;
     flex-direction: row;
-    margin-top: 1.5rem;
+    margin-top: 2.5rem;
 
     /* Font config */
     color: var(--base-txt-color);
