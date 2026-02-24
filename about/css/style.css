@@ -9,10 +9,12 @@
     --base-txt-color: #323232;
 }
 
+/* === Define style === */
 html {
     scroll-snap-type: y mandatory;
 }
 
+/* === Page base layout === */
 body {
     /* Theme */
     background-color: var(--base-bg-color);
@@ -23,6 +25,7 @@ body {
     min-height: 32vh;
 }
 
+/* === Breadcrumb === */
 .breadcrumb {
     /* Layout config */
     grid-column: 2 / 3;
@@ -55,6 +58,7 @@ body {
     content: ">";
 }
 
+/* === Shared Section Styles === */
 section {
     /* UI config */
     cursor: default;
