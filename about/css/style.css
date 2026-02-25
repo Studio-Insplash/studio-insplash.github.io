@@ -7,6 +7,10 @@
 
     /* Base text color */
     --base-txt-color: #323232;
+
+    /* Breadcrumb color */
+    --breadcrumb-active-color: #323232;
+    --breadcrumb-inactive-color: #7b7b7b;
 }
 
 /* === Define style === */
@@ -25,12 +29,15 @@ body {
     min-height: 32vh;
 }
 
+/* === Breadcrumb === */
 nav[aria-label="Breadcrumb"] {
+    /* UI config */
+    cursor: default;
+    
     /* Layout config */
     grid-column: 1 / 3;
 }
 
-/* === Breadcrumb === */
 .breadcrumb {
     /* Layout config */
     list-style: none;
@@ -41,7 +48,7 @@ nav[aria-label="Breadcrumb"] {
     margin-top: 2.5rem;
 
     /* Font config */
-    color: var(--base-txt-color);
+    color: var(--breadcrumb-inactive-color);
     font-family: 'Exo 2', sans-serif;
     font-weight: bold;
     font-size: 1.2rem;
@@ -53,6 +60,11 @@ nav[aria-label="Breadcrumb"] {
     color: inherit;
 }
 
+.breadcrumb > li > a:hover {
+    /* Font config */
+    color: var(--breadcrumb-active-color);
+}
+
 .breadcrumb > li + li::before {
     /* Layout config */
     margin-left: 0.5rem;
@@ -60,6 +72,12 @@ nav[aria-label="Breadcrumb"] {
 
     /* Font config */
     content: "›";
+    color: var(--breadcrumb-inactive-color);
+}
+
+.breadcrumb > li[aria-current="page"] {
+    /* Font config */
+    color: var(--breadcrumb-active-color);
 }
 
 /* === Shared Section Styles === */
