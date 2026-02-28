@@ -30,7 +30,7 @@ body {
 }
 
 /* === Breadcrumb === */
-nav[aria-label="Breadcrumb"] {
+.breadcrumb {
     /* UI config */
     cursor: default;
     
@@ -38,7 +38,7 @@ nav[aria-label="Breadcrumb"] {
     grid-column: 1 / 3;
 }
 
-.breadcrumb {
+.breadcrumb__inner {
     /* Layout config */
     list-style: none;
     white-space: nowrap;
@@ -54,18 +54,18 @@ nav[aria-label="Breadcrumb"] {
     font-size: 1.2rem;
 }
 
-.breadcrumb > li > a {
+.breadcrumb__link {
     /* UI config */
     text-decoration: none;
     color: inherit;
 }
 
-.breadcrumb > li > a:hover {
+.breadcrumb__link:hover {
     /* Font config */
     color: var(--breadcrumb-active-color);
 }
 
-.breadcrumb > li + li::before {
+.breadcrumb__item + .breadcrumb__item::before {
     /* Layout config */
     margin-left: 0.5rem;
     margin-right: 0.5rem;
@@ -75,9 +75,18 @@ nav[aria-label="Breadcrumb"] {
     color: var(--breadcrumb-inactive-color);
 }
 
-.breadcrumb > li[aria-current="page"] {
+.breadcrumb__inner > li[aria-current="page"] {
     /* Font config */
     color: var(--breadcrumb-active-color);
+}
+
+/* === Section Navigation === */
+.section-nav {
+    /* Layout config */
+    grid-column: 1 / 3;
+
+    display: flex;
+    flex-direction: column;
 }
 
 /* === Shared Section Styles === */
@@ -123,7 +132,7 @@ section {
 }
 
 /* === What We Do section === */
-.wwd__inner h1 {
+.what-we-do__inner h1 {
     /* Layout config */
     text-align: center;
     white-space: nowrap;
@@ -134,7 +143,7 @@ section {
     word-spacing: 0.2rem;
 }
 
-.wwd__inner p {
+.what-we-do__inner p {
     /* Layout config */
     text-align: center;
 
