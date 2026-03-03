@@ -13,11 +13,6 @@
     --breadcrumb-inactive-color: #7b7b7b;
 }
 
-/* === Define style === */
-html {
-    scroll-snap-type: y mandatory;
-}
-
 /* === Page base layout === */
 body {
     /* Theme */
