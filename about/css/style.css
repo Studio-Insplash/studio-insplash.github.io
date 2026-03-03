@@ -21,7 +21,10 @@ body {
     /* Layout config */
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    height: 100vh;
     min-height: 32vh;
+
+    scroll-snap-type: y mandatory;
 }
 
 /* === Breadcrumb === */
@@ -74,6 +77,10 @@ body {
     /* Font config */
     color: var(--breadcrumb-active-color);
 }
+
+/* === Snap Container === */
+/* .snap-container {
+} */
 
 /* === Section Navigation === */
 .section-nav {
