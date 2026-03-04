@@ -13,6 +13,16 @@
     --breadcrumb-inactive-color: #7b7b7b;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* === Define style === */
+html {
+    scroll-snap-type: y mandatory;
+}
+
 /* === Page base layout === */
 body {
     /* Theme */
@@ -21,10 +31,7 @@ body {
     /* Layout config */
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    height: 100vh;
     min-height: 32vh;
-
-    scroll-snap-type: y mandatory;
 }
 
 /* === Breadcrumb === */
@@ -78,10 +85,6 @@ body {
     color: var(--breadcrumb-active-color);
 }
 
-/* === Snap Container === */
-/* .snap-container {
-} */
-
 /* === Section Navigation === */
 .section-nav {
     /* Layout config */
@@ -92,13 +95,17 @@ body {
 }
 
 /* === Shared Section Styles === */
-section {
+.snap-container {
     /* UI config */
     cursor: default;
 
     /* Layout config */
-    scroll-snap-align: start;
     grid-column: 4 / 10;
+}
+
+section {
+    /* Layout config */
+    scroll-snap-align: start;
     min-height: 100vh;
     box-sizing: border-box;
 
