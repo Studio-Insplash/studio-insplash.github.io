@@ -6,15 +6,20 @@
     --base-bg-color: #fcf9f2;
 
     /* Base text color */
-    --base-txt-color: #323232;
+    --base-txt-color: #4f3318;
 
     /* Breadcrumb color */
-    --breadcrumb-active-color: #323232;
+    --breadcrumb-active-color: #4f3318;
     --breadcrumb-inactive-color: #7b7b7b;
 
     /* Section nav color */
-    --section-nav-active-color: #323232;
+    --section-nav-active-color: #4f3318;
     --section-nav-inactive-color: #7b7b7b;
+
+    /* Member card color */
+    --card-border-color: #4f3318;
+    --card-txt-color: #4f3318;
+    --card-underline-color: #4f3318;
 }
 
 html, body {
@@ -232,4 +237,84 @@ section {
     font-size: 4.5rem;
     font-style: italic;
     word-spacing: 0.5rem;
+}
+
+/* --- Member Cards UI --- */
+.members__cards {
+    /* Layout config */
+    display: flex;
+    gap: 7.5rem;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-top: 3.5rem;
+}
+
+.member-card {
+    /* UI config */
+    border: 2px solid var(--card-border-color);
+    border-radius: 8px;
+
+    /* Layout config */
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    padding-left: 5.5rem;
+    padding-right: 5.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    /* Font config */
+    font-size: 1.5rem;
+}
+
+.member-card__icon {
+    /* UI config */
+    border: 2px solid var(--card-border-color);
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.member-card__name,
+.member-card__role,
+.member-card__link {
+    /* Layout config */
+    text-align: center;
+}
+
+.member-card__role {
+    /* Layout config */
+    margin-top: 0.5rem;
+}
+
+.member-card__link {
+    /* Font config */
+    text-decoration: none;
+    color: var(--card-txt-color);
+
+    /* hover animation */
+    position: relative;
+}
+
+.member-card__link::after {
+    /* Layout config */
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -6px;
+    left: 0;
+
+    /* Hover animation */
+    transition: .3s;
+}
+
+.member-card__link:hover::after {
+    /* Layout config */
+    width: 100%;
+
+    /* Font config */
+    background-color: var(--card-underline-color);
 }
