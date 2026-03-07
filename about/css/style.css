@@ -113,6 +113,7 @@ body {
     color: var(--section-nav-inactive-color);
     font-family: 'Exo 2', sans-serif;
     font-size: 1.5rem;
+    font-weight: 600;
     font-style: italic;
     letter-spacing: 0.05rem;
 
@@ -130,7 +131,7 @@ body {
     content: '';
     position: absolute;
     width: 0;
-    height: 1.5px;
+    height: 2px;
     bottom: -6px;
     left: 0;
 
