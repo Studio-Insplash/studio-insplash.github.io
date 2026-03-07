@@ -11,6 +11,10 @@
     /* Breadcrumb color */
     --breadcrumb-active-color: #323232;
     --breadcrumb-inactive-color: #7b7b7b;
+
+    /* Section nav color */
+    --section-nav-active-color: #323232;
+    --section-nav-inactive-color: #7b7b7b;
 }
 
 html, body {
@@ -85,13 +89,65 @@ body {
     color: var(--breadcrumb-active-color);
 }
 
-/* === Section Navigation === */ /* TODO change to fixed position */
+/* === Section Navigation === */
 .section-nav {
     /* Layout config */
-    grid-column: 1 / 3;
+    position: fixed;
+    top: 5.5rem;
+    left: 0.5rem;
+}
 
-    display: flex;
-    flex-direction: column;
+.section-nav__inner {
+    /* Font config */
+    list-style: none;
+}
+
+.section-nav__inner li {
+    /* Layout config */
+    margin-top: 5.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.section-nav__inner a {
+    /* Font config */
+    text-decoration: none;
+    color: var(--section-nav-inactive-color);
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    letter-spacing: 0.05rem;
+
+    /* Underline animation */
+    position: relative;
+}
+
+.section-nav__inner a:hover {
+    /* Font config */
+    color: var(--section-nav-active-color);
+}
+
+.section-nav__inner a::after {
+    /* Layout config */
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+
+    /* Font config */
+    background-color: var(--section-nav-inactive-color);
+
+    /* Underline animation */
+    transition: .3s;
+}
+
+.section-nav__inner a:hover::after {
+    /* Layout config */
+    width: 100%;
+
+    /* Font config */
+    background-color: var(--section-nav-active-color);
 }
 
 /* === Shared Section Styles === */
