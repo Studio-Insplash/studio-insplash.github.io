@@ -32,6 +32,8 @@ body {
     grid-template-columns: repeat(12, 1fr);
 }
 
+/* === Breadcrumb === */
+
 /* === Dev message contents === */
 main {
     /* Layout config */
