@@ -1,0 +1,39 @@
+:root {
+    /* Base font size */
+    font-size: 100%; /* Default 16px */
+
+    /* Base bg color */
+    --base-bg-color: #fcf9f2;
+
+    /* Base text color */
+    --base-text-color: #4f3318;
+
+    /* Breadcrumb color */
+    --breadcrumb--active-color: #4f3318;
+    --breadcrumb--inactive-color: #7b7b7b;
+
+    /* Content text color */
+    --dev-msg-color: #4f3318;
+    --dev-img-border-color: #4f3318;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* === Page base layout === */
+body {
+    /* Theme */
+    background-color: var(--base-bg-color);
+
+    /* Layout config */
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    /* Font config */
+    font-family: 'Exo 2', sans-serif;
+}
+
+/* === Breadcrumb === */
+/* === Dev message contents === */
