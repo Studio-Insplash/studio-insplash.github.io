@@ -1,0 +1,17 @@
+:root {
+    /* Base font size */
+    font-size: 100%; /* Default 16px */
+
+    /* Base bg color */
+    --base-bg-color: #fcf9f2;
+
+    /* Base text color */
+    --base-txt-color: #4f3318;
+
+    /* Breadcrumb color */
+    --breadcrumb-active-color: #4f3318;
+    --breadcrumb-inactive-color: #7b7b7b;
+
+    /* Content text color */
+    --dev-msg-color: #4f3318;
+}
