@@ -14,6 +14,7 @@
 
     /* Content text color */
     --dev-msg-color: #4f3318;
+    --dev-img-border-color: #4f3318;
 }
 
 html, body {
@@ -29,4 +30,44 @@ body {
     /* Layout config */
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+}
+
+/* === Dev message contents === */
+main {
+    /* Layout config */
+    grid-column: 4 / 10;
+    display: grid;
+    place-items: center;
+
+    min-height: 100vh;
+}
+
+.dev-message {
+    /* Layout config */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dev-message-img {
+    /* UI config */
+    width: 80%;
+    height: auto;
+    border: 1px solid var(--dev-img-border-color);
+    border-radius: 5%;
+
+    /* Layout config */
+    margin-bottom: 1.5rem;
+}
+
+.cat-caption {
+    /* UI config */
+    cursor: default;
+
+    /* Font config */
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.5rem;
+    color: var(--dev-msg-color);
+    word-spacing: 0.2rem;
+    font-style: italic;
 }
