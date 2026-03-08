@@ -36,4 +36,43 @@ body {
 }
 
 /* === Breadcrumb === */
+
 /* === Dev message contents === */
+main {
+    /* Layout config */
+    grid-column: 4 / 10;
+    display: grid;
+    place-items: center;
+
+    min-height: 100dvh;
+}
+
+.dev-message {
+    /* Layout config */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.dev-message-img {
+    /* UI config */
+    width: 60%;
+    height: auto;
+    border: 1px solid var(--dev-img-border-color);
+    border-radius: 5%;
+    
+    /* Layout config */
+    margin-bottom: 1.5rem;
+}
+
+.alien-caption {
+    /* UI config */
+    cursor: default;
+
+    /* Font config */
+    font-size: 1.5rem;
+    color: var(--dev-msg-color);
+    word-spacing: 0.2rem;
+    font-style: italic;
+}
