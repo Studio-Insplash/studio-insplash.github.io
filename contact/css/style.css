@@ -16,6 +16,11 @@
     --dev-msg-color: #4f3318;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 /* === Page base layout === */
 body {
     /* Theme */
