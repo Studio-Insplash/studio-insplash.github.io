@@ -15,3 +15,13 @@
     /* Content text color */
     --dev-msg-color: #4f3318;
 }
+
+/* === Page base layout === */
+body {
+    /* Theme */
+    background-color: var(--base-bg-color);
+
+    /* Layout config */
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
