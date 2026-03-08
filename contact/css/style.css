@@ -30,9 +30,59 @@ body {
     /* Layout config */
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+
+    /* Font config */
+    font-family: 'Exo 2', sans-serif;
 }
 
 /* === Breadcrumb === */
+.breadcrumb {
+    /* UI config */
+    cursor: default;
+
+    /* Layout config */
+    grid-column: 1 / 3;
+}
+
+.breadcrumb__inner {
+    /* Layout config */
+    list-style: none;
+
+    display: flex;
+    flex-direction: row;
+    margin-top: 2.5rem;
+
+    /* Font config */
+    color: var(--breadcrumb-inactive-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.breadcrumb__link {
+    /* UI config */
+    text-decoration: none;
+    color: inherit;
+}
+
+.breadcrumb__link:hover {
+    /* Font config */
+    color: var(--breadcrumb-active-color);
+}
+
+.breadcrumb__item + .breadcrumb__item::before {
+    /* Layout config */
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+
+    /* Font config */
+    content: "›";
+    color: var(--breadcrumb-inactive-color);
+}
+
+.breadcrumb__inner > li[aria-current="page"] {
+    /* Font config */
+    color: var(--breadcrumb-active-color);
+}
 
 /* === Dev message contents === */
 main {
@@ -41,7 +91,7 @@ main {
     display: grid;
     place-items: center;
 
-    min-height: 100vh;
+    min-height: 100dvh;
 }
 
 .dev-message {
@@ -67,7 +117,6 @@ main {
     cursor: default;
 
     /* Font config */
-    font-family: 'Exo 2', sans-serif;
     font-size: 1.5rem;
     color: var(--dev-msg-color);
     word-spacing: 0.2rem;
