@@ -12,9 +12,10 @@
     --breadcrumb--active-color: #4f3318;
     --breadcrumb--inactive-color: #7b7b7b;
 
-    /* Content text color */
-    --dev-msg-color: #4f3318;
-    --dev-img-border-color: #4f3318;
+    /* Content color */
+    --product-name-color: #4f3318;
+    --product-img-border-color: #4f3318;
+    --product-card-border-color: #4f3318;
 }
 
 html, body {
@@ -30,6 +31,7 @@ body {
     /* Layout config */
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    min-height: 100dvh;
 
     /* Font config */
     font-family: 'Exo 2', sans-serif;
@@ -82,4 +84,19 @@ body {
 .breadcrumb__inner > li[aria-current="page"] {
     /* Font config */
     color: var(--breadcrumb--active-color);
+}
+
+/* === Product UI === */
+main {
+    /* Layout config */
+    grid-column: 4 / 10;
+    align-self: center;
+}
+
+.products {
+    /* Layout config */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 9.5rem;
 }
