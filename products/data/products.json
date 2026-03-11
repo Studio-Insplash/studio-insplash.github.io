@@ -1,0 +1,29 @@
+[
+    {
+        "id": null,
+        "icon": null,
+        "name": "Product one",
+        "url": null,
+        "language": null,
+        "genre": ["software", "tool"],
+        "createdDate": "2026/03/11",
+        "developer": {
+            "name": "nullboy",
+            "url": null
+        }
+    },
+
+    {
+        "id": null,
+        "icon": null,
+        "name": "Product two",
+        "url": null,
+        "language": null,
+        "genre": null,
+        "createdDate": "2026/03/11",
+        "developer": {
+            "name": "nullboy",
+            "url": null
+        }
+    }
+]
