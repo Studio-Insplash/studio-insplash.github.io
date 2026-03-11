@@ -4,7 +4,7 @@
         "icon": "../assets/products/Insplash.png",
         "description": null,
         "name": "Product one",
-        "url": null,
+        "url": "https://github.com/Ju5tADeve10per",
         "language": null,
         "genre": ["software", "tool"],
         "createdDate": "2026/03/11",
@@ -73,7 +73,7 @@
     {
         "id": null,
         "icon": "../assets/products/Insplash.png",
-        "name": "Product six",
+        "name": "Product Snake",
         "url": null,
         "language": null,
         "genre": null,
