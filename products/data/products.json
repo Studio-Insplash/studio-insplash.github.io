@@ -1,7 +1,8 @@
 [
     {
         "id": null,
-        "icon": null,
+        "icon": "../assets/products/Insplash.png",
+        "description": null,
         "name": "Product one",
         "url": null,
         "language": null,
@@ -15,7 +16,63 @@
 
     {
         "id": null,
-        "icon": null,
+        "icon": "../assets/products/Insplash.png",
+        "name": "Product two",
+        "url": null,
+        "language": null,
+        "genre": null,
+        "createdDate": "2026/03/11",
+        "developer": {
+            "name": "nullboy",
+            "url": null
+        }
+    },
+
+    {
+        "id": null,
+        "icon": "../assets/products/Insplash.png",
+        "name": "Product two",
+        "url": null,
+        "language": null,
+        "genre": null,
+        "createdDate": "2026/03/11",
+        "developer": {
+            "name": "nullboy",
+            "url": null
+        }
+    },
+
+    {
+        "id": null,
+        "icon": "../assets/products/Insplash.png",
+        "name": "Product two",
+        "url": null,
+        "language": null,
+        "genre": null,
+        "createdDate": "2026/03/11",
+        "developer": {
+            "name": "nullboy",
+            "url": null
+        }
+    },
+
+    {
+        "id": null,
+        "icon": "../assets/products/Insplash.png",
+        "name": "Product two",
+        "url": null,
+        "language": null,
+        "genre": null,
+        "createdDate": "2026/03/11",
+        "developer": {
+            "name": "nullboy",
+            "url": null
+        }
+    },
+
+    {
+        "id": null,
+        "icon": "../assets/products/Insplash.png",
         "name": "Product two",
         "url": null,
         "language": null,
