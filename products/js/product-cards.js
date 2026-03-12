@@ -29,7 +29,7 @@ async function loadProducts() {
             </article>
             `;
             return product.url
-                ? `<a href="${product.url}" target="_blank" class="product-card__link">${card}</a>`
+                ? `<a href="${product.url}" target="_blank" rel="noopener noreferrer" class="product-card__link">${card}</a>`
                 : card;
         }).join("");
 
