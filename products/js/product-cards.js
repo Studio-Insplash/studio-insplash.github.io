@@ -21,7 +21,6 @@ async function loadProducts() {
     /* Generate HTML */
     const html = products
         .map(product => {
-            // URLがある場合はリンクでラップ、無い場合はそのまま
             const card = `
             <article class="product-card">
                 <img src="${product.icon ?? ""}" alt="${product.description ?? ""}" class="product-card__icon">
