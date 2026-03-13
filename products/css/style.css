@@ -89,6 +89,8 @@ body {
     color: var(--breadcrumb--active-color);
 }
 
+/* === Filter UI === */
+
 /* === Product UI === */
 main {
     /* Layout config */
