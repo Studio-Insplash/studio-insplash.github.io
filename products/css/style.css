@@ -89,8 +89,6 @@ body {
     color: var(--breadcrumb--active-color);
 }
 
-/* === Filter UI === */
-
 /* === Product UI === */
 main {
     /* Layout config */
@@ -100,6 +98,13 @@ main {
     padding-bottom: 3.5rem;
 }
 
+/* --- Filter UI --- */
+.filter {
+    /* Layout config */
+    
+}
+
+/* --- Card UI --- */
 .products {
     /* Layout config */
     display: grid;
