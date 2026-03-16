@@ -17,6 +17,10 @@
     --product-img-border-color: #4f3318;
     --product-card-border-color: #4f3318;
 
+    /* Filter UI color */
+    --filter-border-color: #4f3318;
+    --filter-text-color: #4f3318;
+
     /* Product Layout */
     --product-gap: 1.5rem;
 }
@@ -92,16 +96,31 @@ body {
 /* === Product UI === */
 main {
     /* Layout config */
-    grid-column: 4 / 10;
+    grid-column: 2 / 12;
     align-self: center;
-    padding-top: 10.5rem;
-    padding-bottom: 3.5rem;
+    padding-bottom: 5.5rem;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
 }
 
 /* --- Filter UI --- */
 .filter {
+    /* UI config */
+    border-radius: 5%;
+
     /* Layout config */
-    
+    grid-column: 10 / 12;
+    justify-self: end;
+    margin-bottom: 3.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+
+    /* Font config */
+    font-size: 1.5rem;
+    border: 2px solid var(--filter-border-color);
+    color: var(--filter-text-color);
+    white-space: nowrap;
 }
 
 /* --- Card UI --- */
@@ -111,6 +130,8 @@ main {
     grid-template-columns: repeat(5, 1fr);
     gap: var(--product-gap);
     justify-content: center;
+
+    grid-column: 4 / 10;
 }
 
 .product-card {
