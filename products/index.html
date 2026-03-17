@@ -35,7 +35,19 @@
     <main>
         <!-- Filter UI section -->
         <section class="filter">
-            <p>filter UI</p>
+            <!-- Main filter -->
+            <select name="main-filter" id="main-filter">
+                <option value="">-- Select Main --</option>
+                <option value="genre">Genre</option>
+                <option value="language">Language</option>
+                <option value="developer">Developer</option>
+            </select>
+
+            <!-- Sub filter -->
+            <select name="sub-filter" id="sub-filter">
+                <option value="">-- Select Sub --</option>
+                <!-- ここはあとでJSでmain-filterに応じてoptionを差し替える-->
+            </select>
         </section>
 
         <!-- Card UI section -->

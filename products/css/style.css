@@ -107,7 +107,7 @@ main {
 /* --- Filter UI --- */
 .filter {
     /* UI config */
-    border-radius: 5%;
+    /* border-radius: 5%; */
 
     /* Layout config */
     grid-column: 10 / 12;
@@ -118,7 +118,6 @@ main {
 
     /* Font config */
     font-size: 1.5rem;
-    border: 2px solid var(--filter-border-color);
     color: var(--filter-text-color);
     white-space: nowrap;
 }
