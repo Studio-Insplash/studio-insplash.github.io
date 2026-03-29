@@ -106,9 +106,6 @@ main {
 
 /* --- Filter UI --- */
 .filter {
-    /* UI config */
-    /* border-radius: 5%; */
-
     /* Layout config */
     grid-column: 10 / 12;
     justify-self: end;
@@ -120,6 +117,10 @@ main {
     font-size: 1.5rem;
     color: var(--filter-text-color);
     white-space: nowrap;
+}
+
+#main-filter, #sub-filter {
+
 }
 
 /* --- Card UI --- */
