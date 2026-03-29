@@ -119,12 +119,22 @@ main {
     white-space: nowrap;
 }
 
-#main-filter, #sub-filter {
+#main-filter, 
+#sub-filter {
+    /* UI config */
+    cursor: pointer;
+    
     /* Font config */
     color: var(--filter-text-color);
     background-color: var(--base-bg-color);
     border: none;
     font-size: 1.1rem;
+}
+
+#main-filter:focus,
+#sub-filter:focus {
+    /* UI config */
+    outline: none;
 }
 
 #sub-filter {
