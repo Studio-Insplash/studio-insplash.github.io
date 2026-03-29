@@ -120,7 +120,16 @@ main {
 }
 
 #main-filter, #sub-filter {
+    /* Font config */
+    color: var(--filter-text-color);
+    background-color: var(--base-bg-color);
+    border: none;
+    font-size: 1.1rem;
+}
 
+#sub-filter {
+    /* UI config */
+    margin-left: 2.5rem;
 }
 
 /* --- Card UI --- */
