@@ -4,10 +4,13 @@ console.log(main)
 main.addEventListener("change", () => {
     if (main.value === "all") {
         // process
+        const sub = document.getElementById("sub-filter")
+        sub.style.display = "none"
     }
     else if (main.value === "genre") {
         // process
         const sub = document.getElementById("sub-filter")
+        sub.style.display = "inline-block"
         sub.innerHTML = '<option value="">-- Select Sub --</option><option value="art">Art</option><option value="tool">Tool</option><option value="game">Game</option>'
     }
     else if (main.value === "language") {
