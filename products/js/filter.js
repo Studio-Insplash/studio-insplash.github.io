@@ -1,22 +1,36 @@
-console.log("filter loaded")
 const main = document.getElementById("main-filter")
-console.log(main)
 main.addEventListener("change", () => {
-    if (main.value === "all") {
-        // process
-        const sub = document.getElementById("sub-filter")
-        sub.style.display = "none"
-    }
-    else if (main.value === "genre") {
-        // process
-        const sub = document.getElementById("sub-filter")
-        sub.style.display = "inline-block"
-        sub.innerHTML = '<option value="">-- Select Sub --</option><option value="art">Art</option><option value="tool">Tool</option><option value="game">Game</option>'
-    }
-    else if (main.value === "language") {
-        // process
-    }
-    else if (main.value === "developer") {
-        // process
-    }
+    updateSubFilter(main.value)
 })
+
+const subOptions = {
+    genre: ["all", "art", "tool", "game"],
+    language: ["all", "english", "japanese"],
+    developer: ["all", "nullboy", "will", "moqueca"]
+}
+
+function updateSubFilter(main_value) {
+    const sub = document.getElementById("sub-filter")
+    const options = subOptions[main_value]
+    if (main_value === "all") {
+        sub.style.display = "none"
+        sub.innerHTML = ""
+        return
+    }
+    else {
+        sub.style.display = "inline-block"
+    }
+
+    let html = ""
+    options.forEach(item => {
+        let label = item
+        if (main_value === "genre" || main_value === "language") {
+            label = label.charAt(0).toUpperCase() + label.slice(1)
+        }
+        if (main_value === "developer" && item === "all") {
+            label = "All"
+        }
+        html += `<option value="${item}">${label}</option>`
+    })
+    sub.innerHTML = html
+}
