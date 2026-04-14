@@ -1,11 +1,8 @@
-async function loadProducts() {
-    /* Load DOM */
-    const container = document.querySelector(".products");
-    if (!container)
-        return;
+/* A variable for retrieving data from products.json */
+let products = [];
 
+async function loadProducts() {
     /* Load JSON */
-    let products = [];
     try {
         const response = await fetch("data/products.json");
         if (!response.ok) {
@@ -17,8 +14,20 @@ async function loadProducts() {
     } catch (error) {
         console.error("Failed to load products:", error);
     }
+    
+    // call renderProducts for init process
+}
+
+function renderProducts(main_value, sub_value) {
+    /* Load DOM */
+    const container = document.querySelector(".products");
+    if (!container)
+        return;
+
+    /* Search cards from json data */
 
     /* Generate HTML */
+    /* TODO recode with search and render features */
     const html = products
         .map(product => {
             const card = `
@@ -34,6 +43,8 @@ async function loadProducts() {
 
     /* Add to DOM */
     container.innerHTML = html;
+
 }
 
+/* Init call */
 loadProducts();
