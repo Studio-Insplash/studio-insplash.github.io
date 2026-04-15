@@ -12,9 +12,9 @@ sub.addEventListener("change", () => {
 })
 
 const subOptions = {
-    genre: ["all", "art", "tool", "game"],
-    language: ["all", "english", "japanese"],
-    developer: ["all", "nullboy", "will", "moqueca"]
+    genre: ["art", "tool", "game"],
+    language: ["english", "japanese"],
+    developer: ["nullboy", "will", "moqueca"]
 }
 
 function updateSubFilter(main_value) {
@@ -29,14 +29,11 @@ function updateSubFilter(main_value) {
         sub.style.display = "inline-block"
     }
 
-    let html = ""
+    let html = `<option value="" disabled selected>-- Select Sub --</option>`
     options.forEach(item => {
         let label = item
         if (main_value === "genre" || main_value === "language") {
             label = label.charAt(0).toUpperCase() + label.slice(1)
-        }
-        if (main_value === "developer" && item === "all") {
-            label = "All"
         }
         html += `<option value="${item}">${label}</option>`
     })

@@ -16,6 +16,7 @@ async function loadProducts() {
     }
     
     // call renderProducts for init process
+    renderProducts("all", null)
 }
 
 function renderProducts(main_value, sub_value) {
