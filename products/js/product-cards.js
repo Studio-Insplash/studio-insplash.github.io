@@ -19,6 +19,14 @@ async function loadProducts() {
     renderProducts("all", null)
 }
 
+function filterProducts(main_value, sub_value) {
+    // process
+}
+
+function createProductHTML(filteredProducts) {
+    // process
+}
+
 function renderProducts(main_value, sub_value) {
     /* Load DOM */
     const container = document.querySelector(".products");
