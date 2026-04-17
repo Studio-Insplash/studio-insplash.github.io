@@ -20,7 +20,11 @@ async function loadProducts() {
 }
 
 function filterProducts(main_value, sub_value) {
-    // process
+    if (main_value === "all") {
+        return products;
+    }
+    
+    // search main_value first, then sub_value
 }
 
 function createProductHTML(filteredProducts) {
