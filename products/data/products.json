@@ -2,85 +2,72 @@
     {
         "id": null,
         "icon": "../assets/products/Insplash.png",
-        "description": null,
+        "description": "This is a sample",
         "name": "Product one",
         "url": "https://github.com/Ju5tADeve10per",
-        "language": null,
-        "genre": ["art", "tool", "game"],
+        "language": "english",
+        "genre": "art",
         "createdDate": "2026/03/11",
-        "developer": {
-            "name": "nullboy",
-            "url": null
-        }
+        "developer": "nullboy"
     },
 
     {
         "id": null,
         "icon": "../assets/products/Insplash.png",
+        "description": "This is a sample",
         "name": "Product two",
-        "url": null,
-        "language": null,
-        "genre": null,
+        "url": "https://github.com/Ju5tADeve10per",
+        "language": "japanese",
+        "genre": "tool",
         "createdDate": "2026/03/11",
-        "developer": {
-            "name": "nullboy",
-            "url": null
-        }
+        "developer": "will"
     },
 
     {
         "id": null,
         "icon": "../assets/products/Insplash.png",
+        "description": "This is a sample",
         "name": "Product three",
-        "url": null,
-        "language": null,
-        "genre": null,
+        "url": "https://github.com/Ju5tADeve10per",
+        "language": "english",
+        "genre": "game",
         "createdDate": "2026/03/11",
-        "developer": {
-            "name": "nullboy",
-            "url": null
-        }
+        "developer": "moqueca"
     },
 
     {
         "id": null,
         "icon": "../assets/products/Insplash.png",
+        "description": "This is a sample",
         "name": "Product four",
-        "url": null,
-        "language": null,
-        "genre": null,
+        "url": "https://github.com/Ju5tADeve10per",
+        "language": "japanese",
+        "genre": "art",
         "createdDate": "2026/03/11",
-        "developer": {
-            "name": "nullboy",
-            "url": null
-        }
+        "developer": "nullboy"
     },
 
     {
         "id": null,
         "icon": "../assets/products/Insplash.png",
+        "description": "This is a sample",
         "name": "Product five",
-        "url": null,
-        "language": null,
-        "genre": null,
+        "url": "https://github.com/Ju5tADeve10per",
+        "language": "english",
+        "genre": "tool",
         "createdDate": "2026/03/11",
-        "developer": {
-            "name": "nullboy",
-            "url": null
-        }
+        "developer": "will"
     },
 
     {
         "id": null,
         "icon": "../assets/products/Insplash.png",
+        "description": "This is a sample",
         "name": "Product Snake",
-        "url": null,
-        "language": null,
-        "genre": null,
+        "url": "https://github.com/Ju5tADeve10per",
+        "language": "japanese",
+        "genre": "game",
         "createdDate": "2026/03/11",
-        "developer": {
-            "name": "nullboy",
-            "url": null
-        }
+        "developer": "moqueca"
     }
 ]

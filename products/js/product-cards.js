@@ -10,7 +10,6 @@ async function loadProducts() {
         }
 
         products = await response.json();
-
     } catch (error) {
         console.error("Failed to load products:", error);
     }
@@ -24,7 +23,9 @@ function filterProducts(main_value, sub_value) {
         return products;
     }
     
-    // search main_value first, then sub_value
+    return products.filter(product => {
+        return product[main_value] === sub_value;
+    })
 }
 
 function createProductHTML(filteredProducts) {
