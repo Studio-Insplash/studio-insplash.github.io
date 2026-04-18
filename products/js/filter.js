@@ -3,12 +3,14 @@ main.addEventListener("change", () => {
     updateSubFilter(main.value)
     if (main.value === "all") {
         // call a function in product-cards.js with main.value and null 
+        renderProducts("all", null);
     }
 })
 
 const sub = document.getElementById("sub-filter")
 sub.addEventListener("change", () => {
     // call a function in product-cards.js with main.value and sub.value
+    renderProducts(main.value, sub.value);
 })
 
 const subOptions = {
