@@ -57,9 +57,6 @@ function renderProducts(main_value, sub_value) {
 
     /* Render HTML */
     container.innerHTML = html;
-
-    /* Update UI */
-    updateSubFilter(main_value);
 }
 
 /* Init call */
