@@ -1,6 +1,9 @@
 /* A variable for retrieving data from products.json */
 let products = [];
 
+/**
+ * 
+ */
 async function loadProducts() {
     /* Load JSON */
     try {
@@ -18,6 +21,12 @@ async function loadProducts() {
     renderProducts("all", null);
 }
 
+/**
+ * 
+ * @param {*} main_value 
+ * @param {*} sub_value 
+ * @returns 
+ */
 function filterProducts(main_value, sub_value) {
     if (main_value === "all") {
         return products;
@@ -28,6 +37,12 @@ function filterProducts(main_value, sub_value) {
     })
 }
 
+
+/**
+ * 
+ * @param {*} filteredProducts 
+ * @returns 
+ */
 function createProductHTML(filteredProducts) {
     const html = filteredProducts.map(product => {
         const card = `
@@ -43,6 +58,12 @@ function createProductHTML(filteredProducts) {
     return html;
 }
 
+/**
+ * 
+ * @param {*} main_value 
+ * @param {*} sub_value 
+ * @returns 
+ */
 function renderProducts(main_value, sub_value) {
     /* Load DOM */
     const container = document.querySelector(".products");

@@ -2,23 +2,29 @@ const main = document.getElementById("main-filter")
 main.addEventListener("change", () => {
     updateSubFilter(main.value)
     if (main.value === "all") {
-        // call a function in product-cards.js with main.value and null 
         renderProducts("all", null);
     }
 })
 
 const sub = document.getElementById("sub-filter")
 sub.addEventListener("change", () => {
-    // call a function in product-cards.js with main.value and sub.value
     renderProducts(main.value, sub.value);
 })
 
+/**
+ * 
+ */
 const subOptions = {
     genre: ["art", "tool", "game"],
     language: ["english", "japanese"],
     developer: ["nullboy", "will", "moqueca"]
 }
 
+/**
+ * 
+ * @param {*} main_value 
+ * @returns 
+ */
 function updateSubFilter(main_value) {
     const sub = document.getElementById("sub-filter")
     const options = subOptions[main_value]
