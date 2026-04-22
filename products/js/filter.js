@@ -1,4 +1,10 @@
+/**
+ * description
+ * @type {string}
+ */
 const main = document.getElementById("main-filter")
+
+// Short summary
 main.addEventListener("change", () => {
     updateSubFilter(main.value)
     if (main.value === "all") {
@@ -6,13 +12,21 @@ main.addEventListener("change", () => {
     }
 })
 
+/**
+ * description
+ * @type {string}
+ */
 const sub = document.getElementById("sub-filter")
+
+// short summary
 sub.addEventListener("change", () => {
     renderProducts(main.value, sub.value);
 })
 
 /**
- * 
+ * @typedef {Object} subOptions
+ * @property {string} name
+ * @property {string} name
  */
 const subOptions = {
     genre: ["art", "tool", "game"],
