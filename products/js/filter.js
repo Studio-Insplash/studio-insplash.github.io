@@ -1,10 +1,10 @@
 /**
- * description
+ * Retrive main-filter tag
  * @type {string}
  */
 const main = document.getElementById("main-filter")
 
-// Short summary
+// if the main-filter is changed, renew sub filter. If the main-filter is all, renew UI.
 main.addEventListener("change", () => {
     updateSubFilter(main.value)
     if (main.value === "all") {
@@ -13,20 +13,21 @@ main.addEventListener("change", () => {
 })
 
 /**
- * description
+ * Get sub-filter tag
  * @type {string}
  */
 const sub = document.getElementById("sub-filter")
 
-// short summary
+// call a fuction that renews UI
 sub.addEventListener("change", () => {
     renderProducts(main.value, sub.value);
 })
 
 /**
  * @typedef {Object} subOptions
- * @property {string} name
- * @property {string} name
+ * @property {string} genre
+ * @property {string} language
+ * @property {string} developer
  */
 const subOptions = {
     genre: ["art", "tool", "game"],
@@ -35,9 +36,9 @@ const subOptions = {
 }
 
 /**
- * 
- * @param {*} main_value 
- * @returns 
+ * Update product-cards UI
+ * @param {string} main_value 
+ * @returns - I dont'know here what should I write?
  */
 function updateSubFilter(main_value) {
     const sub = document.getElementById("sub-filter")
