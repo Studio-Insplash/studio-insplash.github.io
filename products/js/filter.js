@@ -1,10 +1,10 @@
 /**
- * Retrive main-filter tag
- * @type {string}
+ * Main filter select element
+ * @type {HTMLSelectElement}
  */
 const main = document.getElementById("main-filter")
 
-// if the main-filter is changed, renew sub filter. If the main-filter is all, renew UI.
+// Update sub filter and UI when main filter changes
 main.addEventListener("change", () => {
     updateSubFilter(main.value)
     if (main.value === "all") {
@@ -13,21 +13,19 @@ main.addEventListener("change", () => {
 })
 
 /**
- * Get sub-filter tag
- * @type {string}
+ * Sub filter select element
+ * @type {HTMLSelectElement}
  */
 const sub = document.getElementById("sub-filter")
 
-// call a fuction that renews UI
+// Update products when sub filter changes
 sub.addEventListener("change", () => {
     renderProducts(main.value, sub.value);
 })
 
 /**
- * @typedef {Object} subOptions
- * @property {string} genre
- * @property {string} language
- * @property {string} developer
+ * Sub filter options mapped by main category
+ * @type {Object<string, string[]>}
  */
 const subOptions = {
     genre: ["art", "tool", "game"],
@@ -36,14 +34,15 @@ const subOptions = {
 }
 
 /**
- * Update product-cards UI
- * @param {string} main_value 
- * @returns - I dont'know here what should I write?
+ * Update sub filter UI based on selected main category
+ * 
+ * @param {string} mainValue - Selected main category
+ * @returns {void}
  */
-function updateSubFilter(main_value) {
+function updateSubFilter(mainValue) {
     const sub = document.getElementById("sub-filter")
-    const options = subOptions[main_value]
-    if (main_value === "all") {
+    const options = subOptions[mainValue]
+    if (mainValue === "all") {
         sub.style.display = "none"
         sub.innerHTML = ""
         return
@@ -55,7 +54,7 @@ function updateSubFilter(main_value) {
     let html = `<option value="" disabled selected>-- Select Sub --</option>`
     options.forEach(item => {
         let label = item
-        if (main_value === "genre" || main_value === "language") {
+        if (mainValue === "genre" || mainValue === "language") {
             label = label.charAt(0).toUpperCase() + label.slice(1)
         }
         html += `<option value="${item}">${label}</option>`
