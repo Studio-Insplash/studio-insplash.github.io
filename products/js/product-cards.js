@@ -1,11 +1,16 @@
-/* A variable for retrieving data from products.json */
+/**
+ * List of product objects loaded from JSON
+ * 
+ * @type {Array<Object>}
+ */
 let products = [];
 
 /**
+ * Fetch and load product data from JSON file
  * 
+ * @returns {Promise<void>}
  */
 async function loadProducts() {
-    /* Load JSON */
     try {
         const response = await fetch("data/products.json");
         if (!response.ok) {
@@ -17,31 +22,33 @@ async function loadProducts() {
         console.error("Failed to load products:", error);
     }
     
-    // call renderProducts for init process
+    // Initial render: display all products when the page is first loaded
     renderProducts("all", null);
 }
 
 /**
+ * Filter products based on selected categories
  * 
- * @param {*} main_value 
- * @param {*} sub_value 
- * @returns 
+ * @param {string} mainValue - Selected main category
+ * @param {string|null} subValue - Selected sub category
+ * @returns {Array<Object>}
  */
-function filterProducts(main_value, sub_value) {
-    if (main_value === "all") {
+function filterProducts(mainValue, subValue) {
+    if (mainValue === "all") {
         return products;
     }
     
     return products.filter(product => {
-        return product[main_value] === sub_value;
+        return product[mainValue] === subValue;
     })
 }
 
 
 /**
+ * Generate HTML string for product cards
  * 
- * @param {*} filteredProducts 
- * @returns 
+ * @param {Array<Object>} filteredProducts 
+ * @returns {string}
  */
 function createProductHTML(filteredProducts) {
     const html = filteredProducts.map(product => {
@@ -59,19 +66,20 @@ function createProductHTML(filteredProducts) {
 }
 
 /**
+ * Render product cards to the UI
  * 
- * @param {*} main_value 
- * @param {*} sub_value 
- * @returns 
+ * @param {string} mainValue
+ * @param {string|null} subValue 
+ * @returns {void}
  */
-function renderProducts(main_value, sub_value) {
+function renderProducts(mainValue, subValue) {
     /* Load DOM */
     const container = document.querySelector(".products");
     if (!container)
         return;
 
     /* Search cards from json data */
-    const filteredProducts = filterProducts(main_value, sub_value);
+    const filteredProducts = filterProducts(mainValue, subValue);
 
     /* Generate HTML */
     const html = createProductHTML(filteredProducts);

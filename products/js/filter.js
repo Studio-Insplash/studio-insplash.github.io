@@ -8,6 +8,7 @@ const main = document.getElementById("main-filter")
 main.addEventListener("change", () => {
     updateSubFilter(main.value)
     if (main.value === "all") {
+        // When main is "all", explicitly pass null to avoid depending on the sub value
         renderProducts("all", null);
     }
 })
