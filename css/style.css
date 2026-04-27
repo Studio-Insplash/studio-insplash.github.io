@@ -116,3 +116,16 @@ nav a {
     left: calc(100% + 16px);
     opacity: 1;
 }
+
+/* === Copyright === */
+footer {
+
+    /* Layout config */
+    grid-column: 4 / 10;
+    text-align: center;
+    margin-top: 7.5rem;
+
+    /* Font config */
+    font-family: 'Exo 2', sans-serif;
+    color: var(--base-txt-color);
+}
