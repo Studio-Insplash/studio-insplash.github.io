@@ -31,7 +31,7 @@ sub.addEventListener("change", () => {
 const subOptions = {
     genre: ["art", "tool", "game"],
     language: ["english", "japanese"],
-    developer: ["nullboy", "will", "moqueca"]
+    developer: ["Isanami Suyao", "will", "moqueca"]
 }
 
 /**
