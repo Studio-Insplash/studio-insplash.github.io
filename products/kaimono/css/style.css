@@ -1,0 +1,68 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --base-background-color: #f7faf7;
+    --base-text-color: #008000;
+    --base-link-color: #0000ff;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 5.5rem;
+    background-color: var(--base-background-color);
+}
+
+#header {
+    text-align: center;
+    color: var(--base-text-color);
+}
+
+#header h1 {
+    margin-bottom: 0.5rem;
+}
+
+#installation {
+    color: var(--base-text-color);
+}
+
+#installation h2{
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+#installation ol li {
+    margin-bottom: 0.5rem;
+}
+
+#source-code {
+    text-align: center;
+    color: var(--base-text-color);
+}
+
+#source-code h2 {
+    margin-bottom: 1.5rem;
+}
+
+#author {
+    text-align: center;
+    color: var(--base-text-color);
+}
+
+#author h3 {
+    margin-bottom: 0.5rem;
+}
+
+/* About link */
+a {
+    text-decoration: none;
+    color: var(--base-link-color);
+}
