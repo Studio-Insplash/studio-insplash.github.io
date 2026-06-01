@@ -4,7 +4,7 @@
         "icon": "../assets/products/icon-192.png",
         "description": "Track what you buy",
         "name": "Kaimono",
-        "url": "http://localhost:8000/products/kaimono",
+        "url": "https://studio-insplash.github.io/products/kaimono",
         "language": "japanese",
         "genre": "tool",
         "createdDate": "2026/05/31",
