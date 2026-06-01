@@ -10,8 +10,6 @@
     --base-text-color: #008000;
     --base-link-color: #0000ff;
 
-    /* --base-font: 'M PLUS U', sans-serif; */
-    /* --base-font: 'M PLUS 1', sans-serif; */
     --base-font: 'Klee One', sans-serif;
 }
 
@@ -21,7 +19,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    gap: 5.5rem;
+    gap: 4.5rem;
     background-color: var(--base-background-color);
     font-family: var(--base-font);
     font-weight: 800;
@@ -42,11 +40,11 @@ body {
 
 #installation h2{
     text-align: center;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
 }
 
 #installation ol li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
 }
 
 #source-code {
